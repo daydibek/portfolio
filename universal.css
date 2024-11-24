@@ -4,6 +4,7 @@
 }
 
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   background-color: hsl(0, 0%, 23%);
   color: rgb(255, 255, 255);
@@ -67,7 +68,7 @@ nav ul span {
 nav ul a {
   text-decoration: none;
   justify-content: space-around;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: hsl(0, 0%, 100%);
   transition: all 0.25s;
   padding: 2px;
@@ -225,7 +226,6 @@ footer p {
 
 /* approved changes */
 section {
-  display: block;
   padding: 3px;
 }
 main a {
@@ -240,8 +240,73 @@ main a:hover {
 }
 
 /* new code goes here*/
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px 0;
+}
+.contactSection{
+  border: solid;
+  border-radius: 15px;
+  width: 50%;
+  margin: 10px auto;
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  flex: 1;
+}
+form div{
+  flex: 1;
+}
+form input{
+  border: none;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+form input:hover{
+  box-shadow: 0 0 10px cyan,
+              0 0 20px cyan,
+              0 0 30px cyan;
+}
+form button{
+  border: none;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+form button:hover{
+  box-shadow: 0 0 10px cyan,
+              0 0 20px cyan,
+              0 0 30px cyan;
+}
+form textarea{
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+form textarea:hover{
+  box-shadow: 0 0 10px cyan,
+              0 0 20px cyan,
+              0 0 30px cyan;
+
+}
 
 @media (max-width: 767px) {
+  /* New code goes here */
+  form{
+    flex-direction: column;
+  }
+  .contactSection{
+    width: 100%;
+  }
+  /* New code ends here */
+
+
   header {
     width: 100%;
   }
