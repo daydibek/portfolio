@@ -296,6 +296,59 @@ form textarea:hover{
 }
 
 /* new code goes here*/
+.profImageContainer{
+  margin-top: 15px;
+  /* border: solid; */
+  width: 25%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 0 10px rgb(0, 6, 90);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  /* padding: 4px; */
+}
+.profImageContainer p{
+  font-size: 2vw;
+  text-align: center;
+  margin: 0;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.25s;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.profImageContainer img{
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.profImageContainer:hover{
+  border-radius: 5px;
+  box-shadow: 0 0 2px cyan,
+              0 0 4px cyan,
+              0 0 6px cyan;
+}
+.profImageContainer p:hover{
+  opacity: 1;
+}
+
+/* new code ends here*/
 
 @media (max-width: 767px) {
 /* aproved changes*/
