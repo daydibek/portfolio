@@ -388,7 +388,16 @@ form textarea:hover{
   }
 
   /* New code goes here */
-
+  .projectMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .projectContainer{
+    width: 50%;
+  }
   /* New code ends here */
 
 
