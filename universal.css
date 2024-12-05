@@ -262,6 +262,7 @@ form div{
   flex: 1;
 }
 form input{
+  font-size: larger;
   border: none;
   border-radius: 5px;
   transition: all 0.25s ease-in-out;
@@ -272,6 +273,7 @@ form input:hover{
               0 0 30px cyan;
 }
 form button{
+  font-size: larger;
   border: none;
   border-radius: 5px;
   transition: all 0.25s ease-in-out;
@@ -282,6 +284,7 @@ form button:hover{
               0 0 30px cyan;
 }
 form textarea{
+  font-size: larger;
   width: 100%;
   height: 100%;
   border: none;
@@ -349,6 +352,31 @@ form textarea:hover{
 }
 
 /* new code ends here*/
+.projectMain{
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 25px;
+}
+.projectContainer{
+  border: solid;
+  width: 25%;
+  aspect-ratio: 1/1.5;
+  box-shadow:  5px 5px 5px rgb(27, 27, 27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.projectContainer p{
+  display: none;
+
+}
+.projectContainer:hover p{
+  display: block;
+}
 
 @media (max-width: 767px) {
 /* aproved changes*/
